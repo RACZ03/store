@@ -7,7 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 // Module
-import { SharedModule } from './shared/shared.module';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 // Librery
@@ -18,6 +17,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductComponent } from './pages/product/product.component';
 import { AccesoriesComponent } from './pages/accesories/accesories.component';
+//components
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,14 @@ import { AccesoriesComponent } from './pages/accesories/accesories.component';
     HomeComponent,
     ProductsComponent,
     ProductComponent,
-    AccesoriesComponent
+    AccesoriesComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule,
     ComponentsModule,
     NgxPaginationModule
   ],
