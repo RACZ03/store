@@ -1,1 +1,55 @@
-<p>products works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="d-xl-none d-lg-none col-md-12 col-sm-12 col-xs-12">
+            <app-search  
+            (textSearch)="onSearch( $event )"
+            (orderBy)="getProducts( $event )"
+            (filterC)="onFilterCategory( $event )"
+            (featured)="getProducts( false, $event )">
+            </app-search>
+        </div>
+    </div>
+</div>
+
+<!--===== FEATURED PRODUCTS =====-->
+<section class="featured section" id="featured">
+
+    <div class="mx-5">
+        
+        <div class="row">
+            <div class="col-xl-9 col-lg-9">
+                <!-- IMPORT ITEMS -->
+                <div class="row">
+        
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12"
+                            *ngFor=" let product of productsTem | 
+                                     search: textSearch: 'name' | 
+                                     paginate: { itemsPerPage: 9, currentPage: pageActual }; let i = index">
+        
+                        <app-item [product]="product"></app-item>
+        
+                    </div>
+        
+                </div>
+        
+                    
+                <div class="col-12 text-center mt-5">
+                    <pagination-controls (pageChange)="pageActual = $event" previousLabel = "Anterior"
+                        nextLabel = "Siguiente" responsive = "verdadero" maxSize="4" >
+                    </pagination-controls>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3">
+                <app-search  
+                (textSearch)="onSearch( $event )"
+                (orderBy)="getProducts( $event )"
+                (filterC)="onFilterCategory( $event )"
+                (featured)="getProducts( false, $event )">
+                </app-search>
+            </div>
+        </div>
+    </div>
+        
+</section>

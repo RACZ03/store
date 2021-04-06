@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ImagePipe implements PipeTransform {
 
   transform(image: string): string {
-    const url: string = 'assets/img/products';
-    return `${ url }/${ image }`;
+    const path: string = '../../../../assets/image/ma';
+    return `${ path }/${ image }`;
   }
 
 }

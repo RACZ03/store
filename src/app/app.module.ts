@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Module
 import { ComponentsModule } from 'src/app/components/components.module';
+import { PipesModule } from 'src/app/pipes/pipes.module';
 
 // Librery
 import { NgxPaginationModule } from 'ngx-pagination';
@@ -17,6 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductComponent } from './pages/product/product.component';
 import { AccesoriesComponent } from './pages/accesories/accesories.component';
+
 //components
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -36,7 +38,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     AppRoutingModule,
     HttpClientModule,
     ComponentsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    PipesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

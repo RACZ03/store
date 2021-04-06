@@ -1,1 +1,20 @@
-<p>item works!</p>
+
+<div class="card mb-3 new__box">
+    <div class="featured__new" *ngIf="product.type === 1"> Nuevo </div>
+    <div class="view zoom overlay product" (click)="openProduct()">
+      <img class="img-fluid w-100 img" [src]="product.photo | image" alt="Sample">
+    </div>
+  
+    <div class="card-body text-center">
+  
+      <h5>{{ product.name }}</h5>
+      <p class="small text-muted text-uppercase mb-2">{{ product.description }}</p>
+      <hr>
+      <h6 class="mb-3">
+        <span class="text-danger me-1">C$ {{ product.price }} </span>
+        <span class="text-grey"><s>C$ {{ product.price }}</s></span>
+      </h6>
+
+    </div>
+  
+  </div>
