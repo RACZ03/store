@@ -14,6 +14,7 @@ import { PipesModule } from 'src/app/pipes/pipes.module';
 import { NgxPaginationModule } from 'ngx-pagination';
 
 // Pages
+import { HeroComponent } from './pages/hero/hero.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductComponent } from './pages/product/product.component';
@@ -26,6 +27,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
+    HeroComponent,
     HomeComponent,
     ProductsComponent,
     ProductComponent,

@@ -368,11 +368,12 @@ a {
 .footer{
   background-color: var(--dark-color);
   color: var(--white-color);
+  margin-top: 10px;
 }
 
 .footer__container{
   row-gap: 1.5rem;
-  margin-top: var(--mb-4);
+  margin-top: var(--mb-2);
 }
 
 .footer__title{
