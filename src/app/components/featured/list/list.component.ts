@@ -22,14 +22,13 @@ export class ListComponent implements OnInit {
   }
 
   getProducts() {
-    this.productService.getProduct('desc', true).subscribe(
+    this.productService.getProducts('desc', true).subscribe(
       data => {
         for (let i = 0; i < 8; i++) {
           if (data[i].type === 1) {
             this.products.push(data[i]);
           }
         }
-        console.log(this.products)
     });
   }
 

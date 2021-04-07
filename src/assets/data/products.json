@@ -7,7 +7,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature1.png"],
+        "photo":        ["feature1.png", "feature2.png"],
         "status":       1,
         "type":         1,
         "date":         1617556914530
@@ -20,7 +20,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature2.png"],
+        "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
         "date":         1617556914549
@@ -33,7 +33,7 @@
         "colors":       [],
         "clasification":2,
         "category": 1,
-        "photo":        ["feature3.png"],
+        "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
         "date":         1617556914549
@@ -46,7 +46,7 @@
         "colors":       [],
         "clasification":1,
         "category": 2,
-        "photo":        ["feature4.png"],
+        "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
         "date":         1617556914523
@@ -59,7 +59,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature1.png"],
+        "photo":        ["feature1.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
         "date":         1617556914549
@@ -72,7 +72,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature2.png"],
+        "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
         "date":         1617556914549
@@ -85,7 +85,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature3.png"],
+        "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
         "date":         1617556914549
@@ -98,7 +98,7 @@
         "colors":       [],
         "clasification":1,
         "category": 2,
-        "photo":        ["feature4.png"],
+        "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
         "date":         1617556914510
@@ -111,7 +111,7 @@
         "colors":       [],
         "clasification":1,
         "category": 3,
-        "photo":        ["feature1.png"],
+        "photo":        ["feature1.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
         "date":         1617556914549
@@ -124,7 +124,7 @@
         "colors":       [],
         "clasification":1,
         "category": 3,
-        "photo":        ["feature2.png"],
+        "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
         "date":         1617556914549
@@ -137,7 +137,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature3.png"],
+        "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
         "date":         1617556914549
@@ -150,7 +150,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature4.png"],
+        "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
         "date":         1617556914558
@@ -163,7 +163,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature1.png"],
+        "photo":        ["feature1.png", "feature3.png", "feature1.png"],
         "status":       1,
         "type":         1,
         "date":         1617556914515
@@ -176,7 +176,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature2.png"],
+        "photo":        ["feature2.png" , "feature1.png", "feature4.png"],
         "status":       1,
         "type":         0,
         "date":         1617556914549
@@ -189,7 +189,7 @@
         "colors":       [],
         "clasification":1,
         "category": 1,
-        "photo":        ["feature3.png"],
+        "photo":        ["feature3.png" , "feature2.png", "feature4.png"],
         "status":       1,
         "type":         0,
         "date":         1617556914549

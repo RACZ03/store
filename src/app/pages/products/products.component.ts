@@ -26,7 +26,7 @@ export class ProductsComponent implements OnInit {
   getProducts(orderBy: boolean = false, featured: boolean = false) {
     let order: string = orderBy ? 'asc' : 'desc';
     let bandFeatured: boolean = featured ? true : false;
-    this.productService.getProduct(order, bandFeatured).subscribe(
+    this.productService.getProducts(order, bandFeatured).subscribe(
       data => {
           this.products = data;
           this.productsTem = data;

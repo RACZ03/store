@@ -2,7 +2,7 @@
 <div class="card mb-3 new__box">
     <div class="featured__new" *ngIf="product.type === 1"> Nuevo </div>
     <div class="view zoom overlay product" (click)="openProduct()">
-      <img class="img-fluid w-100 img" [src]="product.photo | image" alt="Sample">
+      <img class="img-fluid w-100 img" [src]="product.photo[0] | image" alt="Sample">
     </div>
   
     <div class="card-body text-center">

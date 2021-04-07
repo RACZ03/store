@@ -12,13 +12,12 @@ export class ProductService {
     private http: HttpClient
   ) { }
 
-  getProduct(orderBy: string = 'desc', bandFeatured: boolean = false) {
+  getProducts(orderBy: string = 'desc', bandFeatured: boolean = false) {
     return this.http.get<ProductI[]>('/assets/data/products.json')
                     .pipe(
                       map(
                         data => {
                           let listData: ProductI[];
-                          console.log(bandFeatured)
                           if ( bandFeatured ) {
                             listData = data.reduce(
                               (prev, curr: ProductI) => {
@@ -32,7 +31,6 @@ export class ProductService {
                           } else {
                             listData = data;
                           }
-                          console.log(listData)
                           if ( orderBy === 'desc') {
                             return listData.sort((a,b) => b.date - a.date );
                           } else {
@@ -42,4 +40,19 @@ export class ProductService {
                       )
                     )
   }
+
+  getProduct(id: string) {
+    return this.http.get<ProductI[]>('/assets/data/products.json')
+    .pipe(
+      map(
+        data => {
+          const item = data.find( i => i.code === id);
+          if( item ) {
+            return item;
+          }
+        }
+      )
+    )
+  }
+
 }
