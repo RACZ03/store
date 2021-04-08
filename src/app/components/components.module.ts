@@ -6,6 +6,7 @@ import { SearchComponent } from './search/search.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { CollectionsComponent } from './collections/collections.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -25,7 +26,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
   imports: [
     CommonModule,
     PipesModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AppRoutingModule
   ]
 })
 export class ComponentsModule { }
