@@ -6,10 +6,12 @@
         "price":        29,
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     1,
         "photo":        ["feature1.png", "feature2.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["S", "M", "L", "XL"],
+        "sizez":         [],
         "date":         1617556914530
     },
     {
@@ -19,10 +21,12 @@
         "price":        119,
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     1,
         "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
+        "sizer":         ["S", "M", "L"],
+        "sizez":         [],
         "date":         1617556914549
     },    
     {
@@ -32,10 +36,12 @@
         "price":        122,
         "colors":       ["A", "R", "N", "V"],
         "clasification":2,
-        "category": 1,
+        "category":     3,
         "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
+        "sizer":         [],
+        "sizez":         [7, 8, 9, 10],
         "date":         1617556914549
     },    
     {
@@ -44,11 +50,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        "99",
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 2,
+        "clasification":3,
+        "category":     5,
         "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["M", "L", "XL", "XXL"],
+        "sizez":         [],
         "date":         1617556914523
     },
     {
@@ -57,11 +65,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        29,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":2,
+        "category":     3,
         "photo":        ["feature1.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["S", "M"],
+        "sizez":         [],
         "date":         1617556914549
     },
     {
@@ -70,11 +80,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        119,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":2,
+        "category":     1,
         "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
+        "sizer":         ["S"],
+        "sizez":         [],
         "date":         1617556914549
     },    
     {
@@ -83,11 +95,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        122,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":2,
+        "category":     5,
         "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
+        "sizer":         [],
+        "sizez":         [5, 5.5, 6, 9, 10],
         "date":         1617556914549
     },    
     {
@@ -96,11 +110,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        "99",
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 2,
+        "clasification":2,
+        "category":     2,
         "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["S", "M"],
+        "sizez":         [],
         "date":         1617556914510
     },
     {
@@ -109,11 +125,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        29,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 3,
+        "clasification":3,
+        "category":     1,
         "photo":        ["feature1.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         [5, 6, 7],
+        "sizez":         [],
         "date":         1617556914549
     },
     {
@@ -122,11 +140,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        119,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 3,
+        "clasification":2,
+        "category":     4,
         "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
+        "sizer":         ["S", "M", "L"],
+        "sizez":         [],
         "date":         1617556914549
     },    
     {
@@ -136,10 +156,12 @@
         "price":        122,
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     4,
         "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
+        "sizer":         ["S", "M", "L", "XL"],
+        "sizez":         [],
         "date":         1617556914549
     },    
     {
@@ -148,11 +170,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        "99",
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":2,
+        "category":     1,
         "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["S", "M", "L"],
+        "sizez":         [],
         "date":         1617556914558
     },
     {
@@ -161,11 +185,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        29,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":3,
+        "category":     5,
         "photo":        ["feature1.png", "feature3.png", "feature1.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["S", "M"],
+        "sizez":         [],
         "date":         1617556914515
     },
     {
@@ -174,11 +200,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        119,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":3,
+        "category":     2,
         "photo":        ["feature2.png" , "feature1.png", "feature4.png"],
         "status":       1,
         "type":         0,
+        "sizer":         [],
+        "sizez":         [7, 8, 9],
         "date":         1617556914549
     },    
     {
@@ -188,10 +216,12 @@
         "price":        122,
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     1,
         "photo":        ["feature3.png" , "feature2.png", "feature4.png"],
         "status":       1,
         "type":         0,
+        "sizer":         ["S", "M", "L", "XL"],
+        "sizez":         [],
         "date":         1617556914549
     },    
     {
@@ -200,11 +230,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        "99",
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":3,
+        "category":     2,
         "photo":        ["feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["S", "M", "L", "XL"],
+        "sizez":         [],
         "date":         1617556914549
     },
     {
@@ -213,11 +245,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        "99",
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":2,
+        "category":     4,
         "photo":        ["feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["M"],
+        "sizez":         [],
         "date":         1617556914510
     },
     {
@@ -226,11 +260,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        29,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":2,
+        "category":     3,
         "photo":        ["feature1.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["S", "M", "L", "XL"],
+        "sizez":         [],
         "date":         1617556914549
     },
     {
@@ -239,11 +275,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        119,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":2,
+        "category":     4,
         "photo":        ["feature2.png"],
         "status":       1,
         "type":         0,
+        "sizer":         [],
+        "sizez":         [9, 11],
         "date":         1617556914549
     },    
     {
@@ -252,11 +290,13 @@
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        122,
         "colors":       ["A", "R", "N", "V"],
-        "clasification":1,
-        "category": 1,
+        "clasification":3,
+        "category":     2,
         "photo":        ["feature3.png"],
         "status":       1,
         "type":         0,
+        "sizer":         ["S", "M"],
+        "sizez":         [],
         "date":         1617556914549
     },    
     {
@@ -266,10 +306,12 @@
         "price":        "99",
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     3,
         "photo":        ["feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["S"],
+        "sizez":         [],
         "date":         1617556914558
     },
     {
@@ -279,10 +321,12 @@
         "price":        29,
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     1,
         "photo":        ["feature1.png"],
         "status":       1,
         "type":         1,
+        "sizer":         ["L"],
+        "sizez":         [],
         "date":         1617556914515
     },
     {
@@ -292,10 +336,12 @@
         "price":        119,
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     1,
         "photo":        ["feature2.png"],
         "status":       1,
         "type":         0,
+        "sizer":         ["S"],
+        "sizez":         [],
         "date":         1617556914549
     },    
     {
@@ -305,10 +351,12 @@
         "price":        122,
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     2,
         "photo":        ["feature3.png"],
         "status":       1,
         "type":         0,
+        "sizer":         [],
+        "sizez":         [8],
         "date":         1617556914549
     },    
     {
@@ -318,10 +366,12 @@
         "price":        "99",
         "colors":       ["A", "R", "N", "V"],
         "clasification":1,
-        "category": 1,
+        "category":     3,
         "photo":        ["feature4.png"],
         "status":       1,
         "type":         1,
+        "sizer":         [],
+        "sizez":         [9, 9.5, 10],
         "date":         1617556914549
     }
 ]

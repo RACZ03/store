@@ -1,5 +1,5 @@
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="d-xl-none d-lg-none col-md-12 col-sm-12 col-xs-12">
             <app-search  
@@ -10,15 +10,40 @@
             </app-search>
         </div>
     </div>
-</div>
+</div> -->
 
 <!--===== FEATURED PRODUCTS =====-->
-<section class="featured section" id="featured">
+<section class="featured mt-4" id="featured">
+
 
     <div class="mx-5">
         
-        <div class="row">
+        <div class="row mt-2">
+            <div class="col-xl-3 col-lg-3">
+                <app-search  
+                    [bandFilterR]="bandFilterR"
+                    [bandFilterP]="bandFilterP"
+                    [bandFilterZ]="bandFilterZ"
+                    (textSearch)="onSearch( $event )"
+                    (orderBy)="getProducts( $event )"
+                    (filterC)="onFilterCategory( $event )"
+                    (featured)="getProducts( false, $event )">
+                </app-search>
+            </div>
             <div class="col-xl-9 col-lg-9">
+                <!-- Categories -->
+                
+                <div class="row">
+                    <div class="col-12">
+
+                        <ul class="nav nav-tabs mb-4">
+                            <li class="nav-item" *ngFor="let item of categories">
+                                <a [ngClass]=" item.id === itemCategory ? 'nav-link active tabs' : 'nav-link tabs'" 
+                                   (click)="onSelectCategory( item.id )">{{ item.name }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <!-- IMPORT ITEMS -->
                 <div class="row">
         
@@ -41,14 +66,7 @@
                 </div>
             </div>
 
-            <div class="col-xl-3 col-lg-3">
-                <app-search  
-                (textSearch)="onSearch( $event )"
-                (orderBy)="getProducts( $event )"
-                (filterC)="onFilterCategory( $event )"
-                (featured)="getProducts( false, $event )">
-                </app-search>
-            </div>
+
         </div>
     </div>
         

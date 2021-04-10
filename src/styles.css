@@ -178,6 +178,16 @@ a {
   background-color: var(--first-color-alt);
 }
 
+/* TABS */
+.tabs {
+  cursor: pointer;
+  color: var(--first-color-alt);
+  font-weight: 200px;
+}
+
+.tabs:hover {
+  color: var(--dark-color);
+}
 
 /*===== COLLECTION =====*/
 .collection__container{

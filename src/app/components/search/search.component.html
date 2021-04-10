@@ -13,79 +13,118 @@
     </div>
     
 </div>
-    
-<div class="row">
-    <div class="col-12">
+<div class="row mb-2">
+    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-xs-12">
+        
+        <h6>Clasificación</h6>
+        <hr>    
+        <!-- Options -->
+        <div class="form-check" *ngFor="let item of clasifications; let i = index">
+            <input class="form-check-input" type="checkbox" 
+                    [checked]=" (i + 1) === item.id ? checked[i] : false" 
+                    id="flexCheckDefault" 
+                    (click)="filterClasification( item.id )">
+            <label class="form-check-label" for="flexCheckDefault">
+                {{ item.name }}
+            </label>
+        </div>
+        <!-- FILTER CLOSTING -->
 
-        <div class="d-grid gap-2">
+        <div *ngIf="bandFilterR">
+            <h6 class="mt-3">Tallas Ropa</h6>
+            <hr>    
+            <div class="form-check">
+                <div class="form-check form-check-inline" *ngFor="let item of sizeR; let i = index">
+                    <input class="form-check-input" type="checkbox" 
+                        [checked]="checkedSizeR[i]"
+                        id="flexCheckDefault" 
+                        (click)="onFilterSizeR( item.size )">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        {{ item.size }}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- FILTER SIZE TROUSERS -->
+        <div *ngIf="bandFilterP">
+            <h6 class="mt-3">Tallas Pantalón</h6>
+            <hr>    
+            <div class="form-check">
+                <div class="form-check form-check-inline" *ngFor="let item of sizeP; let i = index">
+                    <input class="form-check-input" type="checkbox" 
+                            [checked]="checkedSizeP[i]" 
+                            id="flexCheckDefault"
+                            (click)="onFilterSizeP( i )">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        {{ item.size === 0 ? 'TODOS' : item.size }}
+                    </label>
+                </div>
+            </div>
+        </div>
 
-            <div class="dropdown">
-                <button class="btn btn-outline-secondary dropdown-toggle w-100" 
-                        type="button" 
-                        id="dropdownMenuButton1" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
-                    Clasificación
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><button class="dropdown-item" (click)="filterC.emit(4)">Todos</button></li>
-                  <li><button class="dropdown-item" (click)="filterC.emit(2)">Hombre</button></li>
-                  <li><button class="dropdown-item" (click)="filterC.emit(1)">Mujer</button></li>
-                  <li><button class="dropdown-item" (click)="filterC.emit(3)">Niño</button></li>
-                </ul>
+        <!-- FILTER SIZE SHOES -->
+        <div *ngIf="bandFilterZ">
+            <h6 class="mt-3">Tallas Zapatos</h6>
+            <hr>    
+            <div class="form-check">
+                <div class="form-check form-check-inline" *ngFor="let item of sizeZ; let i = index">
+                    <input class="form-check-input" type="checkbox" 
+                            [checked]="checkedSizeZ[i]" 
+                            id="flexCheckDefault"
+                            (click)="onFilterSizeZ( i )">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        {{ item.size === 0 ? 'TODOS' : item.size }}
+                    </label>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="row mt-5">
-    <div class="col-12 text-center">
-        <!-- <h5>Filtrar productos</h5> -->
-        <div class="card">
-            <div class="card-body">
-                <h6>Filtrar por</h6>
-                <hr>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" 
-                            type="radio" 
-                            name="inlineRadioOptions" 
-                            id="inlineRadio1" 
-                            [checked]="feaOn"
-                            (click)="featured.emit(true)">
-                    <label class="form-check-label" for="inlineRadio1">Destacados</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" 
-                            type="radio" 
-                            name="inlineRadioOptions" 
-                            id="inlineRadio2" 
-                            [checked]="feaOff"
-                            (click)="featured.emit(false)">
-                    <label class="form-check-label" for="inlineRadio2">Todos</label>
-                </div>        
-                <br><br>        
-                <h6>Ordenar</h6>
-                <hr>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" 
-                            type="radio" 
-                            name="inlineRadioOptions" 
-                            id="inlineRadio3" 
-                            [checked]="desc"
-                            (click)="orderBy.emit(false)">
-                    <label class="form-check-label" for="inlineRadio3">Ultimo</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" 
-                            type="radio" 
-                            name="inlineRadioOptions" 
-                            id="inlineRadio4" 
-                            [checked]="asc"
-                            (click)="orderBy.emit(true)">
-                    <label class="form-check-label" for="inlineRadio3">Nuevo</label>
-                </div>
+    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-xs-12">
+        <br>
+        <h6>Filtrar por</h6>
+        <hr>
+        <div class="text-center">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" 
+                        type="radio" 
+                        name="inlineRadioOptions" 
+                        id="inlineRadio1" 
+                        [checked]="feaOn"
+                        (click)="featured.emit(true)">
+                <label class="form-check-label" for="inlineRadio1">Destacados</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" 
+                        type="radio" 
+                        name="inlineRadioOptions" 
+                        id="inlineRadio2" 
+                        [checked]="feaOff"
+                        (click)="featured.emit(false)">
+                <label class="form-check-label" for="inlineRadio2">Todos</label>
+            </div>       
+        </div>
+        <h6>Ordenar</h6>
+        <hr>
+        <div class="text-center">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" 
+                        type="radio" 
+                        name="inlineRadioOptions" 
+                        id="inlineRadio3" 
+                        [checked]="desc"
+                        (click)="orderBy.emit(false)">
+                <label class="form-check-label" for="inlineRadio3">Ultimo</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" 
+                        type="radio" 
+                        name="inlineRadioOptions" 
+                        id="inlineRadio4" 
+                        [checked]="asc"
+                        (click)="orderBy.emit(true)">
+                <label class="form-check-label" for="inlineRadio3">Nuevo</label>
             </div>
         </div>
-        
     </div>
 </div>
