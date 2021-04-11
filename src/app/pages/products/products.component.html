@@ -1,17 +1,4 @@
 
-<!-- <div class="container">
-    <div class="row">
-        <div class="d-xl-none d-lg-none col-md-12 col-sm-12 col-xs-12">
-            <app-search  
-            (textSearch)="onSearch( $event )"
-            (orderBy)="getProducts( $event )"
-            (filterC)="onFilterCategory( $event )"
-            (featured)="getProducts( false, $event )">
-            </app-search>
-        </div>
-    </div>
-</div> -->
-
 <!--===== FEATURED PRODUCTS =====-->
 <section class="featured mt-4" id="featured">
 
@@ -25,9 +12,10 @@
                     [bandFilterR]="bandFilterR"
                     [bandFilterP]="bandFilterP"
                     [bandFilterZ]="bandFilterZ"
+                    [showCalifications]="showCalifications"
                     (textSearch)="onSearch( $event )"
                     (orderBy)="getProducts( $event )"
-                    (filterC)="onFilterCategory( $event )"
+                    (filterC)="onFilterClasifications( $event )"
                     (featured)="getProducts( false, $event )"
                     (filterSizeR)="onFilterSizeR( $event )"
                     (filterSizeP)="onFilterSizeP( $event )"
@@ -35,9 +23,10 @@
                 </app-search>
                 <!-- IMPORT SEARCH ACCESORIES -->
                 <app-search  *ngIf="bandAccesories"
+                            [showCalifications]="showCalifications"
                             (textSearch)="onSearch( $event )"
                             (orderBy)="getProducts( $event )"
-                            (filterC)="onFilterCategory( $event )"
+                            (filterC)="onFilterClasifications( $event )"
                             (featured)="getProducts( false, $event )">
             </app-search>
             </div>
@@ -57,8 +46,10 @@
                 </div>
                 <!-- IMPORT ITEMS -->
                 <div class="row">
+                    <ngx-spinner></ngx-spinner>
+
         
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12"
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fast fadeIn"
                             *ngFor=" let product of productsTem | 
                                      search: textSearch: 'name' | 
                                      paginate: { itemsPerPage: 9, currentPage: pageActual }; let i = index">

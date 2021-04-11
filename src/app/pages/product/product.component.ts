@@ -19,6 +19,8 @@ export class ProductComponent implements OnInit {
   public colorS: boolean = false;
   public colorI: boolean = false;
   public colorG: boolean = false;
+  public messageWhat: string = '';
+  public numAdmin: string = '+505 86604980';
 
   constructor(
     private productService: ProductService,
@@ -43,7 +45,10 @@ export class ProductComponent implements OnInit {
           else if ( color === 'V' ) { this.colorS = true }
           else if ( color === 'C' ) { this.colorI = true }
           else if ( color === 'G' ) { this.colorG = true }
-        })
+        });
+
+        this.messageWhat = `https://api.whatsapp.com/send?phone= ${ this.numAdmin } 
+                            &text=Hola%20estoy%20interesado%20en%20el%20producto:%20${ this.product.name }`;
       }
     )
   }

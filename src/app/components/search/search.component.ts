@@ -5,14 +5,14 @@ import { SizeService } from '../../services/size.service';
 
 @Component({
   selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  templateUrl: './search.component.html'
 })
 export class SearchComponent implements OnInit {
 
   @Input() bandFilterR: boolean = false;
   @Input() bandFilterP: boolean = false;
   @Input() bandFilterZ: boolean = false;
+  @Input() showCalifications: boolean = true;
   @Output() orderBy = new EventEmitter<boolean>();
   @Output() featured = new EventEmitter<boolean>();
   @Output() textSearch = new EventEmitter<string>();

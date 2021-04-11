@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-collections',
+  selector: 'components-collections',
   templateUrl: './collections.component.html'
 })
 export class CollectionsComponent implements OnInit {
@@ -15,6 +15,10 @@ export class CollectionsComponent implements OnInit {
   }
 
   onRedirection( option: string ) {
-    this.router.navigateByUrl('/products');
+    if ( option === 'M' ) {
+      this.router.navigateByUrl('/collections/men');
+    } else {
+      this.router.navigateByUrl('/collections/women');
+    }
   }
 }

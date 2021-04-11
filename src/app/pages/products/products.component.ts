@@ -1,17 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ProductI } from 'src/app/interfaces/interfaces';
+import { NgxSpinnerService } from "ngx-spinner";
 import { ProductService } from 'src/app/services/product.service';
-import { CategoryI } from '../../interfaces/interfaces';
 import { CategoriesService } from '../../services/categories.service';
+
+import { CategoryI, ProductI } from '../../interfaces/interfaces';
 
 @Component({
   selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  templateUrl: './products.component.html'
 })
 export class ProductsComponent implements OnInit {
 
+  @Input() gender: string = "";
   @Input() bandAccesories: boolean = false;
+  public showCalifications: boolean = true;
   public categories: CategoryI[] = [];
   public pageActual: number = 1;
   public productsTem: ProductI[] = [];
@@ -25,7 +27,8 @@ export class ProductsComponent implements OnInit {
   
   constructor(
     private productService: ProductService,
-    private categoryService: CategoriesService
+    private categoryService: CategoriesService,
+    private spinner: NgxSpinnerService
   ) { 
   }
   
@@ -35,15 +38,37 @@ export class ProductsComponent implements OnInit {
   }
 
   getProducts(orderBy: boolean = false, featured: boolean = false) {
+    this.spinner.show();
     let order: string = orderBy ? 'asc' : 'desc';
     let bandFeatured: boolean = featured ? true : false;
     this.productService.getProducts(order, bandFeatured).subscribe(
       data => {
-        const resp = data.filter( p => p.accesory === this.bandAccesories );
-        if (resp.length > 0) {
-          this.products = resp;
-          this.productsTem = resp;
-        }
+        let resp;
+        setTimeout(() => {
+          // Validate if the products to load are male or female collection
+          if ( this.gender !==  '') {
+            if ( this.gender === 'women') {
+              resp = data.filter( p => p.clasification === 1 );
+              this.showCalifications = false;
+            } else {
+              resp = data.filter( p => p.clasification === 2 );
+              this.showCalifications = false;
+            } console.log(resp)
+            if (resp.length > 0) {
+              this.spinner.hide();
+              this.products = resp;
+              this.productsTem = resp;
+              return;
+            }
+          }
+          // Validate if the products to load come from the products page or the accessories page
+          resp = data.filter( p => p.accesory === this.bandAccesories );
+          if (resp.length > 0) {
+            this.spinner.hide();
+            this.products = resp;
+            this.productsTem = resp;
+          }
+        }, 1000);
     });
   }
 
@@ -52,24 +77,33 @@ export class ProductsComponent implements OnInit {
       this.categories = resp;
     })
   }
-  onFilterCategory(value: number) {
-    if (value === 4){
-      this.productsTem = this.products;
-      return;
-    }
-    const filter = this.products.filter( element => element.clasification === value );
-    this.productsTem = filter;
+  onFilterClasifications(value: number) {
+    this.spinner.show();
+    setTimeout(() => {
+      if (value === 4){
+        this.productsTem = this.products;
+        return;
+      }
+      const filter = this.products.filter( element => element.clasification === value );
+      this.spinner.hide();
+      this.productsTem = filter;
+    }, 600);
   }
 
   onSelectCategory( id: number ) {
     this.changeFilterSize(id);
     this.itemCategory = id;
-    if (id === 6){
-      this.productsTem = this.products;
-      return;
-    }
-    const filter = this.products.filter( element => element.category === this.itemCategory );
-    this.productsTem = filter;
+    this.spinner.show();
+    setTimeout(() => {
+      if (id === 6){
+        this.spinner.hide();
+        this.productsTem = this.products;
+        return;
+      }
+      const filter = this.products.filter( element => element.category === this.itemCategory );
+      this.spinner.hide();
+      this.productsTem = filter;
+    }, 600);
   }
 
   changeFilterSize(id: number) {
@@ -99,10 +133,16 @@ export class ProductsComponent implements OnInit {
         listFilter.push( p );
       }
     });
-    if ( listFilter.length === 0 ) {
-      this.productsTem = [];
-    }
-    this.productsTem = listFilter;
+    this.spinner.show();
+    setTimeout(() => {
+      if ( listFilter.length === 0 ) {
+        this.spinner.hide();
+        this.productsTem = [];
+        return;
+      }
+      this.spinner.hide();
+      this.productsTem = listFilter;
+    }, 600);
   }
 
   onFilterSizeP(e) {
@@ -116,10 +156,16 @@ export class ProductsComponent implements OnInit {
         listFilter.push( p );
       }
     });
-    if ( listFilter.length === 0 ) {
-      this.productsTem = [];
-    }
-    this.productsTem = listFilter;
+    this.spinner.show();
+    setTimeout(() => {
+      if ( listFilter.length === 0 ) {
+        this.spinner.hide();
+        this.productsTem = [];
+        return;
+      }
+      this.spinner.hide();
+      this.productsTem = listFilter;
+    }, 600);
   }
 
   onFilterSizeZ(e) {
@@ -139,10 +185,16 @@ export class ProductsComponent implements OnInit {
         listFilter.push( p );
       }
     });
-    if ( listFilter.length === 0 ) {
-      this.productsTem = [];
-    }
-    this.productsTem = listFilter;
+    this.spinner.show();
+    setTimeout(() => {
+      if ( listFilter.length === 0 ) {
+        this.spinner.hide();
+        this.productsTem = [];
+        return;
+      }
+      this.spinner.hide();
+      this.productsTem = listFilter;
+    }, 600);
   }
 
 }
