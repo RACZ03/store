@@ -8,7 +8,9 @@
                     <span class="collection__subtitle">Colección</span>
                     <br>Hombre
                 </h2>
-                <a class="collection__view" routerLink="/products">Ver más</a>
+                <button class="btn btn-outline-secondary" (click)="onRedirection( 'M' )">
+                    Ver más
+                </button>
             </div>
         </div>
         <div class="collection__box">
@@ -17,7 +19,9 @@
                     <span class="collection__subtitle">Colección</span>
                     <br>Mujer
                 </h2>
-                <a class="collection__view" routerLink="/products">Ver más</a>
+                <button class="btn btn-outline-secondary" (click)="onRedirection( 'W' )">
+                    Ver más
+                </button>
             </div>
             <img src="../../../assets/image/ma/backpackWoman.png" alt="" class="collection__img">
         </div>

@@ -11,6 +11,7 @@ import { CategoriesService } from '../../services/categories.service';
 })
 export class ProductsComponent implements OnInit {
 
+  @Input() bandAccesories: boolean = false;
   public categories: CategoryI[] = [];
   public pageActual: number = 1;
   public productsTem: ProductI[] = [];
@@ -38,8 +39,11 @@ export class ProductsComponent implements OnInit {
     let bandFeatured: boolean = featured ? true : false;
     this.productService.getProducts(order, bandFeatured).subscribe(
       data => {
-          this.products = data;
-          this.productsTem = data;
+        const resp = data.filter( p => p.accesory === this.bandAccesories );
+        if (resp.length > 0) {
+          this.products = resp;
+          this.productsTem = resp;
+        }
     });
   }
 
@@ -82,6 +86,63 @@ export class ProductsComponent implements OnInit {
 
   onSearch(text: string) {
     this.textSearch = text;
+  }
+
+  onFilterSizeR(e) {
+    let listFilter: ProductI[] = [];
+    this.products.forEach( p => {
+      if ( p.sizer === undefined) {
+        return;
+      }
+      const item = p.sizer.filter(size => size === e);
+      if ( item.length > 0 ) {
+        listFilter.push( p );
+      }
+    });
+    if ( listFilter.length === 0 ) {
+      this.productsTem = [];
+    }
+    this.productsTem = listFilter;
+  }
+
+  onFilterSizeP(e) {
+    let listFilter: ProductI[] = [];
+    this.products.forEach( p => {
+      if ( p.sizep === undefined) {
+        return;
+      }
+      const item = p.sizep.filter(size => size === e);
+      if ( item.length > 0 ) {
+        listFilter.push( p );
+      }
+    });
+    if ( listFilter.length === 0 ) {
+      this.productsTem = [];
+    }
+    this.productsTem = listFilter;
+  }
+
+  onFilterSizeZ(e) {
+    let listFilter: ProductI[] = [];
+    this.products.forEach( p => {
+      if ( p.sizez === undefined) {
+        return;
+      }
+      const item = p.sizez.filter(size => size === e);
+      if ( item.length > 0 ) {
+        listFilter.push( p );
+      }
+
+      let value = `${ e.toString() }.5`;
+      const item2 = p.sizez.filter(size => size === parseInt(value));
+      if ( item2.length > 0 && item[0] !== item2[0] ) {
+        listFilter.push( p );
+      }
+    });
+    if ( listFilter.length === 0 ) {
+      this.productsTem = [];
+    }
+    this.productsTem = listFilter;
   }
 
 }

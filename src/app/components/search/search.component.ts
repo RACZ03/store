@@ -17,16 +17,23 @@ export class SearchComponent implements OnInit {
   @Output() featured = new EventEmitter<boolean>();
   @Output() textSearch = new EventEmitter<string>();
   @Output() filterC = new EventEmitter<number>();
+  @Output() filterSizeR = new EventEmitter<string>();
+  @Output() filterSizeP = new EventEmitter<number>();
+  @Output() filterSizeZ = new EventEmitter<number>();
 
   public asc: boolean = false;
   public desc: boolean = true; 
-  public feaOn: boolean = true;
-  public feaOff: boolean = false;
+
+  public feaOff: boolean = true;
+  public feaOn: boolean = false;
+
   public checked: boolean[] = [];
   public checkedSizeR: boolean[] = [];
   public checkedSizeZ: boolean[] = [];
   public checkedSizeP: boolean[] = [];
+
   public clasifications: ClasificationI[] = [];
+
   public sizeR: SizerI[] = [];
   public sizeZ: SizezI[] = [];
   public sizeP: SizepI[] = [];
@@ -95,10 +102,10 @@ export class SearchComponent implements OnInit {
       this.filterC.emit(4);
     } else if ( option === 1 ) {
       this.checked[3] = false; this.checked[2] = false; this.checked[1] = false; this.checked[0] = true;
-      this.filterC.emit(2);
+      this.filterC.emit(1);
     } else if ( option ===  2) {
       this.checked[3] = false; this.checked[2] = false; this.checked[1] = true; this.checked[0] = false;
-      this.filterC.emit(1);
+      this.filterC.emit(2);
     }  else if ( option === 3 ) {
       this.checked[3] = false; this.checked[2] = true; this.checked[1] = false; this.checked[0] = false;
       this.filterC.emit(3);
@@ -106,10 +113,19 @@ export class SearchComponent implements OnInit {
       this.checked[3] = true; this.checked[2] = false; this.checked[1] = false; this.checked[0] = false;
       this.filterC.emit(4);
     }
+  }
 
+  onFeatured(band: boolean) {
+    this.featured.emit(band);
+    if ( band ) {
+      this.feaOff = false; this.feaOn = true;
+    } else {
+      this.feaOff = true; this.feaOn = false;
+    }
   }
 
   onFilterSizeR( item: string ) {
+    this.filterSizeR.emit(item);
     for (let i = 0; i < this.checkedSizeR.length; i++) {
       if (this.sizeR[i].size === item){
         this.checkedSizeR[i] = true;
@@ -119,7 +135,8 @@ export class SearchComponent implements OnInit {
     }
   }
   
-  onFilterSizeZ( item: number ) {
+  onFilterSizeZ( item: number, size: number ) {
+    this.filterSizeZ.emit(size);
     for (let i = 0; i < this.checkedSizeZ.length; i++) {
       if (i === item){
         this.checkedSizeZ[i] = true;
@@ -131,6 +148,7 @@ export class SearchComponent implements OnInit {
 
   
   onFilterSizeP( item: number ) {
+    this.filterSizeP.emit(item);
     for (let i = 0; i < this.checkedSizeP.length; i++) {
       if (i === item){
         this.checkedSizeP[i] = true;

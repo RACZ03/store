@@ -13,10 +13,10 @@
                 </div>
             </div>
             <br>
-            <div class="row">
+            <div class="row" *ngIf="product?.photo.length > 1">
                 <div class="col" *ngFor="let photo of product.photo">
                     <div class="card card-option" (click)="onChangePhoto(photo)">
-                        <img *ngIf="photo !== ''" class="img-fluid w-100 img" [src]="photo | image" alt="">
+                        <img *ngIf="photo !== ''" class="img-fluid w-100" [src]="photo | image" alt="">
                     </div>
                 </div>
             </div>
@@ -28,18 +28,58 @@
     
             <div class="card">
                 <div class="card-body">
-                    <h3 class="text-center">{{ product.name }}</h3>
+                    <h3 class="text-center">{{ product?.name }}</h3>
 
-                    <p style="font-size: 14px" >{{ product.description }}</p>
+                    <p style="font-size: 14px" >{{ product?.description }}</p>
                     
-                    <h6>Colores disponibles</h6>    
-                    <span class="badge rounded-pill bg-primary me-2" *ngIf="colorP">Azúl</span>
-                    <span class="badge rounded-pill bg-warning me-2" *ngIf="colorW">Amarrillo</span>
-                    <span class="badge rounded-pill bg-dark me-2" *ngIf="colorB">Negro</span>
-                    <span class="badge rounded-pill bg-danger me-2" *ngIf="colorD">Rojo</span>
-                    <span class="badge rounded-pill bg-success me-2" *ngIf="colorS">Verde</span>
-                    <span class="badge rounded-pill bg-info me-2" *ngIf="colorI">Celeste</span>
-                    <span class="badge rounded-pill bg-secondary me-2" *ngIf="colorG">Gris</span>
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Colores disponibles</h6>    
+                            <span class="badge rounded-pill bg-primary me-2" *ngIf="colorP">Azúl</span>
+                            <span class="badge rounded-pill bg-warning me-2" *ngIf="colorW">Amarrillo</span>
+                            <span class="badge rounded-pill bg-dark me-2" *ngIf="colorB">Negro</span>
+                            <span class="badge rounded-pill bg-danger me-2" *ngIf="colorD">Rojo</span>
+                            <span class="badge rounded-pill bg-success me-2" *ngIf="colorS">Verde</span>
+                            <span class="badge rounded-pill bg-info me-2" *ngIf="colorI">Celeste</span>
+                            <span class="badge rounded-pill bg-secondary me-2" *ngIf="colorG">Gris</span>
+                        </div>
+                        <div class="col-6">
+                            <h6>Tallas</h6>    
+                            <!-- SIZE CLOSTING -->
+                            <div class="form-check" *ngIf="product?.sizer.length > 0">
+                                <div class="form-check form-check-inline" *ngFor="let item of product?.sizer">
+                                    <input class="form-check-input" type="checkbox" 
+                                            checked
+                                            id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        {{ item }}
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- SIZE TROUSERS -->
+                            <div class="form-check" *ngIf="product?.sizep.length > 0">
+                                <div class="form-check form-check-inline" *ngFor="let item of product?.sizep">
+                                    <input class="form-check-input" type="checkbox" 
+                                            checked
+                                            id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        {{ item }}
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- SIZE SHOES -->
+                            <div class="form-check" *ngIf="product?.sizez.length > 0">
+                                <div class="form-check form-check-inline" *ngFor="let item of product?.sizez">
+                                    <input class="form-check-input" type="checkbox" 
+                                            checked
+                                            id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        {{ item }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <br>
                     <hr>
@@ -47,8 +87,8 @@
                         <div class="col-4">
                             <h6 class="text-center">Precio</h6>
                             <h6 class="mb-3 text-center">
-                                <span class="text-info me-1">C$ {{ product.price }} </span>
-                                <span class="text-grey"><s>C$ {{ product.price }}</s></span>
+                                <span class="text-info me-1">C$ {{ product?.price }} </span>
+                                <span class="text-grey"><s>C$ {{ product?.price }}</s></span>
                             </h6>
                         </div>
 

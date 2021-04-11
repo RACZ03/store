@@ -71,7 +71,7 @@
                     <input class="form-check-input" type="checkbox" 
                             [checked]="checkedSizeZ[i]" 
                             id="flexCheckDefault"
-                            (click)="onFilterSizeZ( i )">
+                            (click)="onFilterSizeZ( i, item.size )">
                     <label class="form-check-label" for="flexCheckDefault">
                         {{ item.size === 0 ? 'TODOS' : item.size }}
                     </label>
@@ -79,30 +79,25 @@
             </div>
         </div>
     </div>
-
+    <!-- OTHERS FILTER  -->
     <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-xs-12">
-        <br>
         <h6>Filtrar por</h6>
         <hr>
         <div class="text-center">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" 
-                        type="radio" 
-                        name="inlineRadioOptions" 
-                        id="inlineRadio1" 
-                        [checked]="feaOn"
-                        (click)="featured.emit(true)">
-                <label class="form-check-label" for="inlineRadio1">Destacados</label>
+                <input class="form-check-input" type="checkbox" 
+                       [checked]="feaOff"
+                       id="flexCheckDefault"
+                       (click)="onFeatured(false)">
+                <label class="form-check-label" for="flexCheckDefault">Todos</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" 
-                        type="radio" 
-                        name="inlineRadioOptions" 
-                        id="inlineRadio2" 
-                        [checked]="feaOff"
-                        (click)="featured.emit(false)">
-                <label class="form-check-label" for="inlineRadio2">Todos</label>
-            </div>       
+                <input class="form-check-input" type="checkbox" 
+                       [checked]="feaOn"
+                       id="flexCheckDefault"
+                       (click)="onFeatured(true)">
+                <label class="form-check-label" for="flexCheckDefault">Destacados</label>
+            </div>   
         </div>
         <h6>Ordenar</h6>
         <hr>
@@ -111,19 +106,19 @@
                 <input class="form-check-input" 
                         type="radio" 
                         name="inlineRadioOptions" 
-                        id="inlineRadio3" 
+                        id="flexCheckDefault" 
                         [checked]="desc"
-                        (click)="orderBy.emit(false)">
-                <label class="form-check-label" for="inlineRadio3">Ultimo</label>
+                        (click)="orderBy.emit(true)">
+                <label class="form-check-label" for="flexCheckDefault">Nuevo</label>
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" 
                         type="radio" 
                         name="inlineRadioOptions" 
-                        id="inlineRadio4" 
+                        id="flexCheckDefault" 
                         [checked]="asc"
-                        (click)="orderBy.emit(true)">
-                <label class="form-check-label" for="inlineRadio3">Nuevo</label>
+                        (click)="orderBy.emit(false)">
+                <label class="form-check-label" for="flexCheckDefault">Ultimo</label>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 [
     {
         "code":         "P-00000000001",
-        "name":         "Headphone One Black 1",
+        "name":         "Headphone",
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        29,
         "colors":       ["A", "R", "N", "V"],
@@ -10,8 +10,10 @@
         "photo":        ["feature1.png", "feature2.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["S", "M", "L", "XL"],
-        "sizez":         [],
+        "sizer":        ["S", "M", "L", "XL"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914530
     },
     {
@@ -25,8 +27,10 @@
         "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
-        "sizer":         ["S", "M", "L"],
-        "sizez":         [],
+        "sizer":        ["S", "M", "L"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -40,8 +44,10 @@
         "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
-        "sizer":         [],
-        "sizez":         [7, 8, 9, 10],
+        "sizer":        [],
+        "sizez":        [7, 8, 9, 10],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -55,8 +61,10 @@
         "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["M", "L", "XL", "XXL"],
-        "sizez":         [],
+        "sizer":        [],
+        "sizez":        [],
+        "sizep":        [26, 28, 30],
+        "accesory":     false,
         "date":         1617556914523
     },
     {
@@ -70,8 +78,10 @@
         "photo":        ["feature1.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["S", "M"],
-        "sizez":         [],
+        "sizer":        ["S", "M"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },
     {
@@ -85,13 +95,15 @@
         "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
-        "sizer":         ["S"],
-        "sizez":         [],
+        "sizer":        ["S"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
         "code":         "P-00000000007",
-        "name":         "Apple Air Pods 2",
+        "name":         "Apple Air Pods 2 update",
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        122,
         "colors":       ["A", "R", "N", "V"],
@@ -100,8 +112,10 @@
         "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
-        "sizer":         [],
-        "sizez":         [5, 5.5, 6, 9, 10],
+        "sizer":        [],
+        "sizez":        [5, 5.5, 6, 9, 10],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -115,13 +129,15 @@
         "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["S", "M"],
-        "sizez":         [],
+        "sizer":        [],
+        "sizez":        [],
+        "sizep":        [28,30,32,34],
+        "accesory":     false,
         "date":         1617556914510
     },
     {
         "code":         "P-00000000009",
-        "name":         "Headphone One Black 3",
+        "name":         "Headphone One Black 3 33",
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem, mollis eget dignissim nec, dapibus ac orci. Cras id orci id ipsum eleifend viverra convallis cursus risus.",
         "price":        29,
         "colors":       ["A", "R", "N", "V"],
@@ -130,8 +146,10 @@
         "photo":        ["feature1.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         [5, 6, 7],
-        "sizez":         [],
+        "sizer":        [5, 6, 7],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },
     {
@@ -145,8 +163,10 @@
         "photo":        ["feature2.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
-        "sizer":         ["S", "M", "L"],
-        "sizez":         [],
+        "sizer":        ["S", "M", "L"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -160,8 +180,10 @@
         "photo":        ["feature3.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         0,
-        "sizer":         ["S", "M", "L", "XL"],
-        "sizez":         [],
+        "sizer":        ["S", "M", "L", "XL"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -175,8 +197,10 @@
         "photo":        ["feature4.png", "feature3.png", "feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["S", "M", "L"],
-        "sizez":         [],
+        "sizer":        ["S", "M", "L"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914558
     },
     {
@@ -190,8 +214,10 @@
         "photo":        ["feature1.png", "feature3.png", "feature1.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["S", "M"],
-        "sizez":         [],
+        "sizer":        [],
+        "sizez":        [],
+        "sizep":        [32, 34],
+        "accesory":     false,
         "date":         1617556914515
     },
     {
@@ -205,8 +231,10 @@
         "photo":        ["feature2.png" , "feature1.png", "feature4.png"],
         "status":       1,
         "type":         0,
-        "sizer":         [],
-        "sizez":         [7, 8, 9],
+        "sizer":        [],
+        "sizez":        [7, 8, 9],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -220,8 +248,10 @@
         "photo":        ["feature3.png" , "feature2.png", "feature4.png"],
         "status":       1,
         "type":         0,
-        "sizer":         ["S", "M", "L", "XL"],
-        "sizez":         [],
+        "sizer":        ["S", "M", "L", "XL"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -235,8 +265,10 @@
         "photo":        ["feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["S", "M", "L", "XL"],
-        "sizez":         [],
+        "sizer":        ["S", "M", "L", "XL"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },
     {
@@ -250,8 +282,10 @@
         "photo":        ["feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["M"],
-        "sizez":         [],
+        "sizer":        ["M"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914510
     },
     {
@@ -265,8 +299,10 @@
         "photo":        ["feature1.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["S", "M", "L", "XL"],
-        "sizez":         [],
+        "sizer":        ["S", "M", "L", "XL"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },
     {
@@ -280,8 +316,10 @@
         "photo":        ["feature2.png"],
         "status":       1,
         "type":         0,
-        "sizer":         [],
-        "sizez":         [9, 11],
+        "sizez":        [],
+        "sizez":        [],
+        "sizep":        [32, 36],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -295,8 +333,10 @@
         "photo":        ["feature3.png"],
         "status":       1,
         "type":         0,
-        "sizer":         ["S", "M"],
-        "sizez":         [],
+        "sizer":        ["S", "M"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -310,8 +350,10 @@
         "photo":        ["feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["S"],
-        "sizez":         [],
+        "sizer":        ["S"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914558
     },
     {
@@ -325,8 +367,10 @@
         "photo":        ["feature1.png"],
         "status":       1,
         "type":         1,
-        "sizer":         ["L"],
-        "sizez":         [],
+        "sizer":        ["L"],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914515
     },
     {
@@ -340,8 +384,10 @@
         "photo":        ["feature2.png"],
         "status":       1,
         "type":         0,
-        "sizer":         ["S"],
-        "sizez":         [],
+        "sizer":        [],
+        "sizez":        [],
+        "sizep":        [28],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -355,8 +401,10 @@
         "photo":        ["feature3.png"],
         "status":       1,
         "type":         0,
-        "sizer":         [],
-        "sizez":         [8],
+        "sizer":        [],
+        "sizez":        [],
+        "sizep":        [30],
+        "accesory":     false,
         "date":         1617556914549
     },    
     {
@@ -370,8 +418,61 @@
         "photo":        ["feature4.png"],
         "status":       1,
         "type":         1,
-        "sizer":         [],
-        "sizez":         [9, 9.5, 10],
+        "sizer":        [],
+        "sizez":        [9, 9.5, 10],
+        "sizep":        [],
+        "accesory":     false,
         "date":         1617556914549
+    },    
+    {
+        "code":         "P-00000000026",
+        "name":         "Bolso",
+        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem.",
+        "price":        "150",
+        "colors":       ["N", "V"],
+        "clasification":1,
+        "category":     3,
+        "photo":        ["p.jpg"],
+        "status":       1,
+        "type":         1,
+        "sizer":        [],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     true,
+        "date":         1617556914559
+    },    
+    {
+        "code":         "P-00000000027",
+        "name":         "Bolso",
+        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem.",
+        "price":        "350",
+        "colors":       ["N", "V"],
+        "clasification":1,
+        "category":     3,
+        "photo":        ["p2.jpg"],
+        "status":       1,
+        "type":         1,
+        "sizer":        [],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     true,
+        "date":         1617556914559
+    },
+    {
+        "code":         "P-00000000028",
+        "name":         "Mochila nike",
+        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lorem.",
+        "price":        "240",
+        "colors":       ["N", "V", "A"],
+        "clasification":2,
+        "category":     3,
+        "photo":        ["p3.jpg"],
+        "status":       1,
+        "type":         0,
+        "sizer":        [],
+        "sizez":        [],
+        "sizep":        [],
+        "accesory":     true,
+        "date":         1617556915559
     }
 ]

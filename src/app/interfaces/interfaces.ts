@@ -7,10 +7,12 @@ export interface ProductI {
     clasification?:number,
     category?:     number,
     photo?:        string[],
-    status?:       string,
+    status?:       number,
     type:          number,
     sizer:         string[],
     sizez:         number[],
+    sizep:         number[],
+    accesory:      boolean,
     date:          number
 }
 
