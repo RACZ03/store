@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NgxSpinnerService } from "ngx-spinner";
+// import { NgxSpinnerService } from "ngx-spinner";
 import { ProductService } from 'src/app/services/product.service';
 import { CategoriesService } from '../../services/categories.service';
 
@@ -28,7 +28,7 @@ export class ProductsComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private categoryService: CategoriesService,
-    private spinner: NgxSpinnerService
+    // private spinner: NgxSpinnerService
   ) { 
   }
   
@@ -38,7 +38,7 @@ export class ProductsComponent implements OnInit {
   }
 
   getProducts(orderBy: boolean = false, featured: boolean = false) {
-    this.spinner.show();
+    // this.spinner.show();
     let order: string = orderBy ? 'asc' : 'desc';
     let bandFeatured: boolean = featured ? true : false;
     this.productService.getProducts(order, bandFeatured).subscribe(
@@ -55,7 +55,7 @@ export class ProductsComponent implements OnInit {
               this.showCalifications = false;
             } console.log(resp)
             if (resp.length > 0) {
-              this.spinner.hide();
+              // this.spinner.hide();
               this.products = resp;
               this.productsTem = resp;
               return;
@@ -64,7 +64,7 @@ export class ProductsComponent implements OnInit {
           // Validate if the products to load come from the products page or the accessories page
           resp = data.filter( p => p.accesory === this.bandAccesories );
           if (resp.length > 0) {
-            this.spinner.hide();
+            // this.spinner.hide();
             this.products = resp;
             this.productsTem = resp;
           }
@@ -78,14 +78,14 @@ export class ProductsComponent implements OnInit {
     })
   }
   onFilterClasifications(value: number) {
-    this.spinner.show();
+    // this.spinner.show();
     setTimeout(() => {
       if (value === 4){
         this.productsTem = this.products;
         return;
       }
       const filter = this.products.filter( element => element.clasification === value );
-      this.spinner.hide();
+      // this.spinner.hide();
       this.productsTem = filter;
     }, 600);
   }
@@ -93,15 +93,15 @@ export class ProductsComponent implements OnInit {
   onSelectCategory( id: number ) {
     this.changeFilterSize(id);
     this.itemCategory = id;
-    this.spinner.show();
+    // this.spinner.show();
     setTimeout(() => {
       if (id === 6){
-        this.spinner.hide();
+        // this.spinner.hide();
         this.productsTem = this.products;
         return;
       }
       const filter = this.products.filter( element => element.category === this.itemCategory );
-      this.spinner.hide();
+      // this.spinner.hide();
       this.productsTem = filter;
     }, 600);
   }
@@ -133,14 +133,14 @@ export class ProductsComponent implements OnInit {
         listFilter.push( p );
       }
     });
-    this.spinner.show();
+    // this.spinner.show();
     setTimeout(() => {
       if ( listFilter.length === 0 ) {
-        this.spinner.hide();
+        // this.spinner.hide();
         this.productsTem = [];
         return;
       }
-      this.spinner.hide();
+      // this.spinner.hide();
       this.productsTem = listFilter;
     }, 600);
   }
@@ -156,14 +156,14 @@ export class ProductsComponent implements OnInit {
         listFilter.push( p );
       }
     });
-    this.spinner.show();
+    // this.spinner.show();
     setTimeout(() => {
       if ( listFilter.length === 0 ) {
-        this.spinner.hide();
+        // this.spinner.hide();
         this.productsTem = [];
         return;
       }
-      this.spinner.hide();
+      // this.spinner.hide();
       this.productsTem = listFilter;
     }, 600);
   }
@@ -185,14 +185,14 @@ export class ProductsComponent implements OnInit {
         listFilter.push( p );
       }
     });
-    this.spinner.show();
+    // this.spinner.show();
     setTimeout(() => {
       if ( listFilter.length === 0 ) {
-        this.spinner.hide();
+        // this.spinner.hide();
         this.productsTem = [];
         return;
       }
-      this.spinner.hide();
+      // this.spinner.hide();
       this.productsTem = listFilter;
     }, 600);
   }

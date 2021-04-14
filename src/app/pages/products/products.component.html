@@ -37,7 +37,7 @@
                     <div class="col-12">
 
                         <ul class="nav nav-tabs mb-4">
-                            <li class="nav-item" *ngFor="let item of categories">
+                            <li class="nav-item tabs" *ngFor="let item of categories">
                                 <a [ngClass]=" item.id === itemCategory ? 'nav-link active tabs' : 'nav-link tabs'" 
                                    (click)="onSelectCategory( item.id )">{{ item.name }}</a>
                             </li>
@@ -46,7 +46,7 @@
                 </div>
                 <!-- IMPORT ITEMS -->
                 <div class="row">
-                    <ngx-spinner></ngx-spinner>
+                    <!-- <ngx-spinner></ngx-spinner> -->
 
         
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fast fadeIn"

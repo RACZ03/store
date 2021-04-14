@@ -121,14 +121,7 @@ a {
   margin-right: var(--mb-3);
 }
 
-.l-header{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--gray-color);
-}
+
 
 
 /*===== HOME =====*/
@@ -181,7 +174,15 @@ a {
 /* TABS */
 .tabs {
   cursor: pointer;
-  color: var(--first-color-alt);
+  color: #000;
+  font-weight: 200px;
+}
+
+
+
+.tabs {
+  cursor: pointer;
+  color: #000;
   font-weight: 200px;
 }
 
@@ -429,27 +430,8 @@ a {
     margin-bottom: var(--mb-4);
   }
 
-  .nav{
-    height: calc(var(--header-height) + 1rem);
-    justify-content: initial;
-  }
-
-  .nav__menu{
-    margin-left: auto;
-  }
-
-  .nav__list{
-    display: flex;
-  }
-
-  .nav__item{
-    margin-left: var(--mb-4);
-    margin-bottom: 0;
-  }
-
-  .nav__toggle{
-    display: none;
-  }
+ 
+ 
 
   .home__container{
     height: 100vh;
