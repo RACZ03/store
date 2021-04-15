@@ -12,13 +12,18 @@ export class ProductComponent implements OnInit {
 
   public product: ProductI;
   public photo: string = '';
-  public colorP: boolean = false;
-  public colorW: boolean = false;
-  public colorB: boolean = false;
-  public colorD: boolean = false;
-  public colorS: boolean = false;
-  public colorI: boolean = false;
-  public colorG: boolean = false;
+  public colorHellow: boolean = false;
+  public colorBlue: boolean = false;
+  public colorWhite: boolean = false;
+  public colorBrown: boolean = false;
+  public colorLightBlue: boolean = false;
+  public colorGray: boolean = false;
+  public colorPurple: boolean = false;
+  public colorOrange: boolean = false;
+  public colorBlack: boolean = false;
+  public colorPink: boolean = false;
+  public colorRed: boolean = false;
+  public colorGreen: boolean = false;
   public messageWhat: string = '';
   public numAdmin: string = '+505 86604980';
 
@@ -38,13 +43,18 @@ export class ProductComponent implements OnInit {
         this.product = resp;
         this.photo = this.product.photo[0];
         this.product.colors.forEach( color => {
-          if ( color === 'A' ) { this.colorP = true }
-          else if ( color === 'W' ) { this.colorW = true }
-          else if ( color === 'N' ) { this.colorB = true }
-          else if ( color === 'R' ) { this.colorD = true }
-          else if ( color === 'V' ) { this.colorS = true }
-          else if ( color === 'C' ) { this.colorI = true }
-          else if ( color === 'G' ) { this.colorG = true }
+          if ( color === 'HELLOW' ) { this.colorHellow = true }
+          else if ( color === 'BLUE' ) { this.colorBlue = true }
+          else if ( color === 'WHITE' ) { this.colorWhite = true }
+          else if ( color === 'BROWN' ) { this.colorBrown = true }
+          else if ( color === 'LIGHTBLUE' ) { this.colorLightBlue = true }
+          else if ( color === 'GRAY' ) { this.colorGray = true }
+          else if ( color === 'PURPLE' ) { this.colorPurple = true }
+          else if ( color === 'ORANGE' ) { this.colorOrange = true }
+          else if ( color === 'BLACK' ) { this.colorBlack = true }
+          else if ( color === 'PINK' ) { this.colorPink = true }
+          else if ( color === 'RED' ) { this.colorRed = true }
+          else if ( color === 'GREEN' ) { this.colorGreen = true }
         });
 
         this.messageWhat = `https://api.whatsapp.com/send?phone= ${ this.numAdmin } 
