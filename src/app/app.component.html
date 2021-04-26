@@ -4,11 +4,11 @@
 
 <!-- CONTENT -->
 <div >
-
     <router-outlet></router-outlet>
-
 </div>
 
 <!-- FOOTER -->
 <app-footer></app-footer>
 
+<!-- BUTTON BACK TO TOP  -->
+<a *ngIf="showButton" (click)="onScrollTop()" class="back-to-top"><i class='bx bxs-chevron-up-circle'></i></a>

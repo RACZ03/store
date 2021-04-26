@@ -1,0 +1,8 @@
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 3;
+    font-size: 30px;
+}
+
