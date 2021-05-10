@@ -9,9 +9,11 @@ export interface ProductI {
     photo?:        string[],
     status?:       number,
     type:          number,
-    sizer:         string[],
-    sizez:         number[],
-    sizep:         number[],
+    sizer?:        string[],
+    sizez?:        number[],
+    sizep?:        number[],
+    sizepm?:       string[],
+    sizesm?:       string[],
     accesory:      boolean,
     date:          number
 }

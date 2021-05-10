@@ -13,6 +13,8 @@
         "sizer":        ["S", "M", "L", "XL"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914530
     },
@@ -30,6 +32,8 @@
         "sizer":        ["S", "M", "L"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -47,6 +51,8 @@
         "sizer":        [],
         "sizez":        [7, 8, 9, 10],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -64,6 +70,8 @@
         "sizer":        [],
         "sizez":        [],
         "sizep":        [26, 28, 30],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914523
     },
@@ -81,6 +89,8 @@
         "sizer":        ["S", "M"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },
@@ -98,6 +108,8 @@
         "sizer":        ["S"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -115,6 +127,8 @@
         "sizer":        [],
         "sizez":        [5, 5.5, 6, 9, 10],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -132,6 +146,8 @@
         "sizer":        [],
         "sizez":        [],
         "sizep":        [28,30,32,34],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914510
     },
@@ -149,6 +165,8 @@
         "sizer":        [5, 6, 7],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },
@@ -166,6 +184,8 @@
         "sizer":        ["S", "M", "L"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -183,6 +203,8 @@
         "sizer":        ["S", "M", "L", "XL"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -200,6 +222,8 @@
         "sizer":        ["S", "M", "L"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914558
     },
@@ -217,6 +241,8 @@
         "sizer":        [],
         "sizez":        [],
         "sizep":        [32, 34],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914515
     },
@@ -234,6 +260,8 @@
         "sizer":        [],
         "sizez":        [7, 8, 9],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -251,6 +279,8 @@
         "sizer":        ["S", "M", "L", "XL"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -268,6 +298,8 @@
         "sizer":        ["S", "M", "L", "XL"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },
@@ -285,6 +317,8 @@
         "sizer":        ["M"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914510
     },
@@ -302,6 +336,8 @@
         "sizer":        ["S", "M", "L", "XL"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },
@@ -319,6 +355,8 @@
         "sizez":        [],
         "sizer":        [],
         "sizep":        [32, 36],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -336,6 +374,8 @@
         "sizer":        ["S", "M"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -353,6 +393,8 @@
         "sizer":        ["S"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914558
     },
@@ -370,6 +412,8 @@
         "sizer":        ["L"],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914515
     },
@@ -387,6 +431,8 @@
         "sizer":        [],
         "sizez":        [],
         "sizep":        [28],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -404,6 +450,8 @@
         "sizer":        [],
         "sizez":        [],
         "sizep":        [30],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -421,6 +469,8 @@
         "sizer":        [],
         "sizez":        [9, 9.5, 10],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     false,
         "date":         1617556914549
     },    
@@ -438,6 +488,8 @@
         "sizer":        [],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     true,
         "date":         1617556914559
     },    
@@ -455,6 +507,8 @@
         "sizer":        [],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     true,
         "date":         1617556914559
     },
@@ -472,6 +526,8 @@
         "sizer":        [],
         "sizez":        [],
         "sizep":        [],
+        "sizepm":       [],
+        "sizesm":       [],
         "accesory":     true,
         "date":         1617556915559
     }
