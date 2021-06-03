@@ -3,12 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styles: [`
+  .nav{
+     height: 40px;
+  }
+`],
 })
 export class NavbarComponent  {
 
-  constructor() { }
-
-
+  public urlFace: string = 'https://www.facebook.com/Variedades-Angeles-105210708061550';
+  public urlInstagram: string = '';
+  public urlTwitter: string = '';
 
 }

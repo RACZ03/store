@@ -1,14 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-accesories',
-  templateUrl: './accesories.component.html'
+  template: '<app-products [bandAccesories]="true"></app-products>'
 })
-export class AccesoriesComponent implements OnInit {
+export class AccesoriesComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

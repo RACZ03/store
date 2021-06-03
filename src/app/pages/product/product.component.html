@@ -48,7 +48,8 @@
                             <span class="badge bg-red me-2" *ngIf="colorRed">Rojo</span>
                             <span class="badge bg-green me-2" *ngIf="colorGreen">Verde</span>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6"
+                             *ngIf="product?.sizer.length > 0 || product?.sizepm.length > 0 || product?.sizesm.length > 0 || product?.sizep.length > 0 || product?.sizez.length > 0 ">
                             <h6>Tallas</h6>    
                             <!-- SIZE CLOSTING -->
                             <div class="form-check" *ngIf="product?.sizer.length > 0">

@@ -4,9 +4,9 @@
         <div class="row mx-5">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-13">
                 <div class="footer__box">
-                    <h3 class="footer__title">SARA</h3>
-                    <p class="footer__deal">Products store</p>
-                    <a href="#"><img src="../../../assets/image/ma/footerstore1.png" alt="" class="footer__store"></a>
+                    <h3 class="footer__title">Variedades ángeles</h3>
+                    <!-- <p class="footer__deal">Products store</p> -->
+                    <!-- <a href="#"><img src="../../../assets/image/ma/footerstore1.png" alt="" class="footer__store"></a> -->
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-13">
@@ -14,7 +14,7 @@
                     <h3 class="footer__title">EXPLORAR</h3>
                     <ul>
                         <li><a routerLink="/home" class="footer__link">Inicio</a></li>
-                        <li><a routerLink="/products" class="footer__link">Productos</a></li>
+                        <li><a routerLink="/products" class="footer__link">Galeria</a></li>
                         <li><a routerLink="/accesories" class="footer__link">Accesorios</a></li>
                         <li><a routerLink="/collections" class="footer__link">Coleciones</a></li>
                     </ul>
@@ -23,13 +23,13 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-13">
                 <div class="footer__box">
                     <h3 class="footer__title">SEGUIR</h3>
-                    <a href="#" class="footer__social">
+                    <a [href]="urlFace" class="footer__social">
                         <i class="bx bxl-facebook-square"></i>
                     </a>
-                    <a href="#" class="footer__social">
+                    <a [href]="urlInstagram" class="footer__social">
                         <i class="bx bxl-instagram-alt"></i>
                     </a>
-                    <a href="#" class="footer__social">
+                    <a [href]="urlTwitter" class="footer__social">
                         <i class="bx bxl-twitter"></i>
                     </a>
                 </div>

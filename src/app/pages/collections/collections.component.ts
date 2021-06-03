@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-collections',
-  templateUrl: './collections.component.html'
+  template: '<app-products [gender]="gender"></app-products>'
 })
 export class CollectionsComponent implements OnInit {
 

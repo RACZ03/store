@@ -25,7 +25,7 @@ export class ProductComponent implements OnInit {
   public colorRed: boolean = false;
   public colorGreen: boolean = false;
   public messageWhat: string = '';
-  public numAdmin: string = '+505 86604980';
+  public numAdmin: string = '+505 57852595';
 
   constructor(
     private productService: ProductService,
